@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     password: process.env.DB_PASSWORD
 })
 
-connection.connection((err)=>{
+connection.connect((err)=>{
  if(err) throw err;
  console.log(`Connected to MySQL!`)
 })
